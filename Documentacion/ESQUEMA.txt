@@ -1,0 +1,29 @@
+ESQUEMA
+
+Se trata de replicar una escudería de fórmula 1.
+
+
+==================
+Clase Escuderia
+==================
+- id
+- nombre
+- nacionalidad
+- anioFundacion
+- motores
+------------------
++ ObtenerDatos()
+
+==================
+
+
+Un ejemplo de una instancia de la clase Escuderia puede ser:
+	id: fjdishbnrt9437543ñpu43ti4o3h
+	nombre: "McLaren"
+	nacionalidad: "británica"
+	anioFundacion: 1963
+	motores: "Mercedes"
+
+
+Y el método obtenerDatos() puede retornar:
+	"La escudería McClaren, de nacionalidad británica fué fundada en 1963, utiliza motores Mercedes"
