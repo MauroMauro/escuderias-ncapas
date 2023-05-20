@@ -1,0 +1,15 @@
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\bin\Debug\net6.0\3-Infraestructura.deps.json
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\bin\Debug\net6.0\3-Infraestructura.dll
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\bin\Debug\net6.0\3-Infraestructura.pdb
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\bin\Debug\net6.0\2-Dominio.dll
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\bin\Debug\net6.0\2-Dominio.pdb
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\3-Infraestructura.csproj.AssemblyReference.cache
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\3-Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\3-Infraestructura.AssemblyInfoInputs.cache
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\3-Infraestructura.AssemblyInfo.cs
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\3-Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\3-Infraestructura.csproj.CopyComplete
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\3-Infraestructura.dll
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\refint\3-Infraestructura.dll
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\3-Infraestructura.pdb
+C:\Users\mbenitez\Desktop\Repositorios\escuderias-ncapas\Escuderias-NCapas\3-Infraestructura\obj\Debug\net6.0\ref\3-Infraestructura.dll

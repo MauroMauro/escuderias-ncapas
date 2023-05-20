@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "1-Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "2-Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/1-Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/1-Aplicacion.dll": {}
+        }
+      },
+      "2-Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/2-Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/2-Dominio.dll": {}
+        }
+      },
+      "3-Infraestructura/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "2-Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/3-Infraestructura.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/3-Infraestructura.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "1-Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../1-Aplicacion/1-Aplicacion.csproj",
+      "msbuildProject": "../1-Aplicacion/1-Aplicacion.csproj"
+    },
+    "2-Dominio/1.0.0": {
+      "type": "project",
+      "path": "../2-Dominio/2-Dominio.csproj",
+      "msbuildProject": "../2-Dominio/2-Dominio.csproj"
+    },
+    "3-Infraestructura/1.0.0": {
+      "type": "project",
+      "path": "../3-Infraestructura/3-Infraestructura.csproj",
+      "msbuildProject": "../3-Infraestructura/3-Infraestructura.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "1-Aplicacion >= 1.0.0",
+      "2-Dominio >= 1.0.0",
+      "3-Infraestructura >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mbenitez\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\0-Presentacion.csproj",
+      "projectName": "0-Presentacion",
+      "projectPath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\0-Presentacion.csproj",
+      "packagesPath": "C:\\Users\\mbenitez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\mbenitez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\1-Aplicacion\\1-Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\1-Aplicacion\\1-Aplicacion.csproj"
+            },
+            "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj": {
+              "projectPath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj"
+            },
+            "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\3-Infraestructura\\3-Infraestructura.csproj": {
+              "projectPath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\3-Infraestructura\\3-Infraestructura.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

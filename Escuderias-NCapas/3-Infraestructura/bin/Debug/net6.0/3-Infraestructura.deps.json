@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "3-Infraestructura/1.0.0": {
+        "dependencies": {
+          "2-Dominio": "1.0.0"
+        },
+        "runtime": {
+          "3-Infraestructura.dll": {}
+        }
+      },
+      "2-Dominio/1.0.0": {
+        "runtime": {
+          "2-Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "3-Infraestructura/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "2-Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

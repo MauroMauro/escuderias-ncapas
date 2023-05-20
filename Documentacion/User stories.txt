@@ -1,4 +1,0 @@
-COMO usuario de la aplicación
-QUIERO poder cargar un registro de escudería
-PARA que se muestren sus datos por pantalla
-
