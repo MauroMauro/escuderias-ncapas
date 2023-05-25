@@ -30,9 +30,44 @@ namespace _2_Dominio
             this.motores = new Motores(motores);
         }
 
+
+        public Guid Id()
+        {
+            return id.Valor();
+        }
+
+        public String Nombre()
+        {
+            return nombre.Valor();
+        }
+
+        public String Nacionalidad()
+        {
+            return nacionalidad.Valor();
+        }
+
+        public int AnioFundacion()
+        {
+            return anioFundacion.Valor();
+        }
+
+        public String Motores()
+        {
+            return motores.Valor();
+        }
+
+
+
+
+
+
         public String obtenerDatos()
         {
             return "La escudería " + this.nombre.Valor() + ", de nacionalidad " + this.nacionalidad.Valor() + " fué fundada en " + this.anioFundacion.Valor() + ", utiliza motores " + this.motores.Valor();
         }
+
+
+
+
     }
 }

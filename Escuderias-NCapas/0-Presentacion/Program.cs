@@ -1,13 +1,15 @@
 ﻿
 
 using _1_Aplicacion;
+using _1_Aplicacion.DTO;
 using _2_Dominio;
 using _3_Infraestructura;
 
 
 
 
-Escuderia ferrari = new Escuderia(
+
+EscuderiaDTO ferrari = new EscuderiaDTO(
     Guid.NewGuid(),
     "Ferrari",
     "Italiana",
@@ -15,12 +17,20 @@ Escuderia ferrari = new Escuderia(
     "Ferrari"
 );
 
-Escuderia mcClaren = new Escuderia(
+EscuderiaDTO mcClaren = new EscuderiaDTO(
     Guid.NewGuid(),
     "MacClaren",
     "Britanica",
     1963,
     "Mercedes"
+);
+
+EscuderiaDTO redBull = new EscuderiaDTO(
+    Guid.NewGuid(),
+    "Red Bull",
+    "Austríaca",
+    2005,
+    "Honda"
 );
 
 EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
@@ -31,13 +41,14 @@ CrearEscuderias creadorDeEscuderias = new CrearEscuderias(
 
 creadorDeEscuderias.ejecutar(ferrari);
 creadorDeEscuderias.ejecutar(mcClaren);
+creadorDeEscuderias.ejecutar(redBull);
 
 ObtenerEscuderias obtenedorDeEscuderias = new ObtenerEscuderias(
     escuderiaRepositorio
 );
 
-List<Escuderia> todosLasEscuderias = obtenedorDeEscuderias.ejecutar();
-foreach (Escuderia escuderia in todosLasEscuderias)
+List<EscuderiaDTO> todosLasEscuderias = obtenedorDeEscuderias.ejecutar();
+foreach (EscuderiaDTO escuderia in todosLasEscuderias)
 {
     Console.WriteLine(escuderia.obtenerDatos());
 }

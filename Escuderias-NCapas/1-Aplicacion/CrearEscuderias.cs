@@ -1,4 +1,5 @@
-﻿using _2_Dominio;
+﻿using _1_Aplicacion.DTO;
+using _2_Dominio;
 using _2_Dominio.Repositorio;
 
 namespace _1_Aplicacion
@@ -12,9 +13,9 @@ namespace _1_Aplicacion
             this.repositorio = repositorio;
         }
 
-        public void ejecutar(Escuderia escuderia)
+        public void ejecutar(EscuderiaDTO escuderia)
         {
-            this.repositorio.grabar(escuderia);
+            this.repositorio.grabar(new Escuderia(escuderia.Id(), escuderia.Nombre(), escuderia.Nacionalidad(), escuderia.AnioFundacion(), escuderia.Motores()));
         }
     }
 }

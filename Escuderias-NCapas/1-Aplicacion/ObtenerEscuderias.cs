@@ -1,5 +1,6 @@
 ﻿
 
+using _1_Aplicacion.DTO;
 using _2_Dominio;
 using _2_Dominio.Repositorio;
 
@@ -14,9 +15,17 @@ namespace _1_Aplicacion
             this.repositorio = repositorio;
         }
 
-        public List<Escuderia> ejecutar()
+        public List<EscuderiaDTO> ejecutar()
         {
-            return this.repositorio.obtenerTodos();
+            List<Escuderia> escuderias = this.repositorio.obtenerTodos();
+            List<EscuderiaDTO> escuderiasDTO = new List<EscuderiaDTO>();
+
+            foreach (Escuderia escuderia in escuderias)
+            {
+                EscuderiaDTO escuderiaDTO = new EscuderiaDTO(escuderia.Id(), escuderia.Nombre(), escuderia.Nacionalidad(), escuderia.AnioFundacion(), escuderia.Motores());
+                escuderiasDTO.Add(escuderiaDTO);
+            } 
+            return escuderiasDTO;
         }
     }
 }
