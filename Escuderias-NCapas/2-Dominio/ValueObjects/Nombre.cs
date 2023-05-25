@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2_Dominio.ValueObjects
 {
-    internal class Nombre
+    public class Nombre
     {
         private String valor;
 

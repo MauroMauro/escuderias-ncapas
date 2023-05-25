@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2_Dominio.ValueObjects
 {
-    internal class Motores
+    public class Motores
     {
         private String valor;
 

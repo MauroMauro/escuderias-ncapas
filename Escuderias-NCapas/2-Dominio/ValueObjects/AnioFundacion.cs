@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2_Dominio.ValueObjects
 {
-    internal class AnioFundacion
+    public class AnioFundacion
     {
         private int valor;
 
@@ -21,7 +21,7 @@ namespace _2_Dominio.ValueObjects
             return this.valor;
         }
 
-        private void DebeSerUnValorEntre1900yHoy(int valor)
+        public void DebeSerUnValorEntre1900yHoy(int valor)
         {
             if (valor < 1900 || valor > DateTime.Now.Year)
             { //REVISAR

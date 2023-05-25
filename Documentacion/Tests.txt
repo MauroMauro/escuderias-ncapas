@@ -1,0 +1,30 @@
+==================================
+Métodos a testear
+==================================
+
+**
+Dominio.ValueObjects.AnioFundacion.DebeSerUnValorEntre1900yHoy(int valor)
+Probar ingresar año 2024 (se dispara excepcion)
+Probar ingresar año 1700 (se dispara excepcion)
+Probar ingresar año 1968 (pasa) [Listo]
+
+**
+Dominio.ValueObjects.Motores.DebeContenerMasDe4Caracteres(valor)
+Probar ingresar menos de 4 caracteres (se dispara excepción)
+Probar ingresar mas de 4 caracteres (pasa) [Listo]
+
+**
+Dominio.ValueObjects.Nacionalidad.DebeContenerMasDe3Caracteres(valor) 
+Probar ingresar menos de 3 caracteres (se dispara excepción)
+Probar ingresar mas de 3 caracteres (pasa) [Listo]
+
+**
+Dominio.ValueObjects.Nombre.DebeContenerMasde4caracteres(valor)
+Probar ingresar menos de 4 caracteres (se dispara excepción)
+Probar ingresar mas de 4 caracteres (pasa)
+
+
+**
+Dominio.Entidad.Escuderia.obtenerDatos()
+Probar comparando retorno esperado (pasa) [Listo]
+

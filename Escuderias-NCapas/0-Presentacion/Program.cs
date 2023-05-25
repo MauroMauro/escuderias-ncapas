@@ -15,6 +15,14 @@ Escuderia ferrari = new Escuderia(
     "Ferrari"
 );
 
+Escuderia mcClaren = new Escuderia(
+    Guid.NewGuid(),
+    "MacClaren",
+    "Britanica",
+    1963,
+    "Mercedes"
+);
+
 EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
 
 CrearEscuderias creadorDeEscuderias = new CrearEscuderias(
@@ -22,6 +30,7 @@ CrearEscuderias creadorDeEscuderias = new CrearEscuderias(
 );
 
 creadorDeEscuderias.ejecutar(ferrari);
+creadorDeEscuderias.ejecutar(mcClaren);
 
 ObtenerEscuderias obtenedorDeEscuderias = new ObtenerEscuderias(
     escuderiaRepositorio
