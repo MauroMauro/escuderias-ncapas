@@ -1,0 +1,48 @@
+
+======================================================
+Base de datos SQL Server
+======================================================
+
+------------------------------------------------------
+Preliminares
+------------------------------------------------------
+
+Clic derecho sobre proyecto>> Administrador de paquetes >> Examinar >>
+	- buscar Microsoft.Data.SqlClient >> instalar (en capa de infra solamente)
+
+
+
+
+
+------------------------------------------------------
+En SqlServer Management Studio
+------------------------------------------------------
+
+*Query para generar la  database:
+
+CREATE DATABASE [EscuderíasTP]
+
+
+*Query para generar la tabla Escuderias
+
+CREATE TABLE EscuderíasTP.dbo.Escuderias (
+	id uniqueidentifier NOT NULL,
+	nombre varchar(40),
+	nacionalidad varchar(40),
+	anio_fundacion int,
+	motores varchar(40),
+	CONSTRAINT PK_Escuderias PRIMARY KEY (id)
+);
+
+
+
+
+
+
+------------------------------------------------------
+Datos de conexión
+------------------------------------------------------
+
+Server: localhost
+Database: EscuderiasTP
+Credenciales: Windows Authentication

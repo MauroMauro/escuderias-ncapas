@@ -33,11 +33,13 @@ EscuderiaDTO redBull = new EscuderiaDTO(
     "Honda"
 );
 
-EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
+//EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
+EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
 
-CrearEscuderias creadorDeEscuderias = new CrearEscuderias(
-    escuderiaRepositorio
-);
+
+CrearEscuderias creadorDeEscuderias = new CrearEscuderias(escuderiaRepositorio);
+
+
 
 creadorDeEscuderias.ejecutar(ferrari);
 creadorDeEscuderias.ejecutar(mcClaren);
