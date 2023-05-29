@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z4JpX6npPUBLxc4CCs1M8Xk+9cwAVpsa10vPTbUoJqM8i7rhlZtvTlawMIPOCygQg9JM6RVi5aFb3uWQCc2PSw==",
+  "dgSpecHash": "MoybRiRLeFPSiYYp7r3PWUg4P76kVOxua0Y2Wwz6mBcHcn7nR2fiu0fpO/uLa9u3YSC7lNOZtcxeQ0nahDaAVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\0-Presentacion.csproj",
+  "projectFilePath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\0-Presentacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbenitez\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mbenitez\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

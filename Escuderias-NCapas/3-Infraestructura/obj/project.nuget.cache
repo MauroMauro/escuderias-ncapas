@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XESGC9E1aVae76lXd8zc8VMY+4fn/6LinDQS1ytalxseIBuBWLiN175Glm7uU6NF+/SuBua4fUHJ5hQeYWOq8g==",
+  "dgSpecHash": "y58VRzmPbBZp8M9CbZJ9A0ImLrM0ceK048kbAIiqEbv2fHmUg4PMDM/n+g8k6KGw3qy0Pf3FMfJwy2wGN4Z84A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\3-Infraestructura\\3-Infraestructura.csproj",
+  "projectFilePath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\3-Infraestructura\\3-Infraestructura.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbenitez\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mbenitez\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

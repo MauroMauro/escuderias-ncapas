@@ -33,8 +33,8 @@ EscuderiaDTO redBull = new EscuderiaDTO(
     "Honda"
 );
 
-//EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
-EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
+EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
+//EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
 
 
 CrearEscuderias creadorDeEscuderias = new CrearEscuderias(escuderiaRepositorio);

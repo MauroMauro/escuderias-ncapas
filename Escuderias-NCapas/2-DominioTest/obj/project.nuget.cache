@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jMAL+nDlp1UeNVUBswXzEShmjzdq21wKeX196XmOfDGFA5rrsL86gRstd2qTHWtHY8y1/VrxgbTyPqxM4SJN6g==",
+  "dgSpecHash": "E6eThYvMFOVdW4YTNju38rQoDoJvnyOhj4yY4dAKzGSJUqfC+XdM4N/i8a5bmGLlZK1EeYMDDIFgvK42mtJi9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\2-DominioTest\\2-DominioTest.csproj",
+  "projectFilePath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\2-DominioTest\\2-DominioTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mbenitez\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\mbenitez\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

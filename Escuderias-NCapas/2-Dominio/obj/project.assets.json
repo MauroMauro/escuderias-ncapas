@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj",
       "projectName": "2-Dominio",
-      "projectPath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj",
+      "projectPath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj",
       "packagesPath": "C:\\Users\\mbenitez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mbenitez\\Desktop\\Repositorios\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\obj\\",
+      "outputPath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mbenitez\\AppData\\Roaming\\NuGet\\NuGet.Config",
