@@ -17,5 +17,10 @@ namespace _3_Infraestructura
         {
             return this.escuderias;
         }
+
+        public void borrarEscuderia(Escuderia escuderia)
+        {
+            this.escuderias.Remove(escuderia);
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using _2_Dominio;
 using _2_Dominio.Repositorio;
+using _2_Dominio.ValueObjects;
 using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,20 @@ namespace _3_Infraestructura
     {
 
         String connectionString = "Data Source=NICO;Initial Catalog=EscuderíasTP;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
+        public void borrarEscuderia(Escuderia escuderia)
+        {
+            using(SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                conexion.Open();
+                using(SqlCommand comando = new SqlCommand("DELETE FROM Escuderias WHERE id=@id", conexion))
+                {
+                    comando.Parameters.Add("@id", System.Data.SqlDbType.UniqueIdentifier).Value = escuderia.Id();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
         public void grabar(Escuderia escuderia)
         {
             using (SqlConnection conexion = new SqlConnection(this.connectionString))

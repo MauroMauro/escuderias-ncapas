@@ -54,3 +54,14 @@ foreach (EscuderiaDTO escuderia in todosLasEscuderias)
 {
     Console.WriteLine(escuderia.obtenerDatos());
 }
+
+Console.WriteLine("Borrar Escuderia: " + redBull.obtenerDatos());
+
+BorrarEscuderia borrar = new BorrarEscuderia(escuderiaRepositorio);
+borrar.ejecutar(redBull);
+
+todosLasEscuderias = obtenedorDeEscuderias.ejecutar();
+foreach (EscuderiaDTO escuderia in todosLasEscuderias)
+{
+    Console.WriteLine(escuderia.obtenerDatos());
+}
