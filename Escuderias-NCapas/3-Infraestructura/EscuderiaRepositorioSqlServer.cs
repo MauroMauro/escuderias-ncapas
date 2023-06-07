@@ -12,8 +12,7 @@ namespace _3_Infraestructura
     public class EscuderiaRepositorioSqlServer : IEscuderiaRepositorio
     {
 
-        String connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=EscuderiasTP;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
-
+        String connectionString = "Data Source=NICO;Initial Catalog=EscuderíasTP;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
         public void grabar(Escuderia escuderia)
         {
             using (SqlConnection conexion = new SqlConnection(this.connectionString))
