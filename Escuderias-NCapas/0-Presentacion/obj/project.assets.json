@@ -2057,19 +2057,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mbenitez\\.nuget\\packages\\": {}
+    "C:\\Users\\nicol\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\0-Presentacion.csproj",
+      "projectUniqueName": "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\0-Presentacion.csproj",
       "projectName": "0-Presentacion",
-      "projectPath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\0-Presentacion.csproj",
-      "packagesPath": "C:\\Users\\mbenitez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\obj\\",
+      "projectPath": "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\0-Presentacion.csproj",
+      "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
+      "outputPath": "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\0-Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mbenitez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2083,14 +2083,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\1-Aplicacion\\1-Aplicacion.csproj": {
-              "projectPath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\1-Aplicacion\\1-Aplicacion.csproj"
+            "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\1-Aplicacion\\1-Aplicacion.csproj": {
+              "projectPath": "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\1-Aplicacion\\1-Aplicacion.csproj"
             },
-            "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj": {
-              "projectPath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj"
+            "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj": {
+              "projectPath": "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\2-Dominio\\2-Dominio.csproj"
             },
-            "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\3-Infraestructura\\3-Infraestructura.csproj": {
-              "projectPath": "C:\\Users\\mbenitez\\Desktop\\escuderias-ncapas\\Escuderias-NCapas\\3-Infraestructura\\3-Infraestructura.csproj"
+            "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\3-Infraestructura\\3-Infraestructura.csproj": {
+              "projectPath": "E:\\proyectos\\escuderias-ncapas\\Escuderias-NCapas\\3-Infraestructura\\3-Infraestructura.csproj"
             }
           }
         }

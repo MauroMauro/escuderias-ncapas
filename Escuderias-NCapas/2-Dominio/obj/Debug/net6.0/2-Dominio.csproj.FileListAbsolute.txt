@@ -22,3 +22,15 @@ C:\Users\mbenitez\Desktop\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debu
 C:\Users\mbenitez\Desktop\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\refint\2-Dominio.dll
 C:\Users\mbenitez\Desktop\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\2-Dominio.pdb
 C:\Users\mbenitez\Desktop\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\ref\2-Dominio.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\bin\Debug\net6.0\2-Dominio.deps.json
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\bin\Debug\net6.0\2-Dominio.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\bin\Debug\net6.0\2-Dominio.pdb
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\2-Dominio.csproj.AssemblyReference.cache
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\2-Dominio.GeneratedMSBuildEditorConfig.editorconfig
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\2-Dominio.AssemblyInfoInputs.cache
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\2-Dominio.AssemblyInfo.cs
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\2-Dominio.csproj.CoreCompileInputs.cache
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\2-Dominio.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\refint\2-Dominio.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\2-Dominio.pdb
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\2-Dominio\obj\Debug\net6.0\ref\2-Dominio.dll
