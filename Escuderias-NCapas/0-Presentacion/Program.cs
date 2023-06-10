@@ -55,7 +55,7 @@ foreach (EscuderiaDTO escuderia in todosLasEscuderias)
     Console.WriteLine(escuderia.obtenerDatos());
 }
 
-Console.WriteLine("Borrar Escuderia: " + redBull.obtenerDatos());
+Console.WriteLine("\nBorrar Escuderia: " + redBull.obtenerDatos());
 
 BorrarEscuderia borrar = new BorrarEscuderia(escuderiaRepositorio);
 borrar.ejecutar(redBull);
