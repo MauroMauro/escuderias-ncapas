@@ -34,8 +34,8 @@ EscuderiaDTO redBull = new EscuderiaDTO(
 );
 
 // EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
-EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
-//EscuderiaRepositorioMongoDB escuderiaRepositorio = new EscuderiaRepositorioMongoDB();
+// EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
+EscuderiaRepositorioMongoDB escuderiaRepositorio = new EscuderiaRepositorioMongoDB();
 
 CrearEscuderias creadorDeEscuderias = new CrearEscuderias(escuderiaRepositorio);
 
