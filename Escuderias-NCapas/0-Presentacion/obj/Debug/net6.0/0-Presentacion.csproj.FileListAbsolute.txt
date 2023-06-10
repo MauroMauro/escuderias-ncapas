@@ -166,3 +166,17 @@ E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\obj\Debug\net6.0
 E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\obj\Debug\net6.0\0-Presentacion.pdb
 E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\obj\Debug\net6.0\0-Presentacion.genruntimeconfig.cache
 E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\obj\Debug\net6.0\ref\0-Presentacion.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\AWSSDK.Core.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\DnsClient.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\MongoDB.Bson.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\MongoDB.Driver.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\SharpCompress.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\Snappier.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\ZstdSharp.dll
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+E:\proyectos\escuderias-ncapas\Escuderias-NCapas\0-Presentacion\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
