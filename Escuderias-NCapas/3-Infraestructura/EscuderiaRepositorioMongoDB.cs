@@ -1,13 +1,7 @@
 ﻿using _2_Dominio;
 using _2_Dominio.Repositorio;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MongoDB.Driver;
 using MongoDB.Bson;
-using System.Text.Json.Nodes;
 
 namespace _3_Infraestructura
 {
@@ -16,15 +10,30 @@ namespace _3_Infraestructura
         string string_conexion = "mongodb://mongo:2c40cwoJAUuonQFJRIMo@containers-us-west-88.railway.app:6293";
         public void borrarEscuderia(Escuderia escuderia)
         {
-            Console.WriteLine("Borrando");
+            MongoClient mongoDB = new MongoClient(this.string_conexion);
+            var dbEscuderias = mongoDB.GetDatabase("Escuderias");
+            var coleccionEscuderias = dbEscuderias.GetCollection<BsonDocument>("Escuderias");
+
+            var deleteFilter = Builders<BsonDocument>.Filter.Eq("id", escuderia.Id().ToString());
+            coleccionEscuderias.DeleteOne(deleteFilter);
         }
 
         public void grabar(Escuderia escuderia)
         {
             MongoClient mongoDB = new MongoClient(this.string_conexion);
             var dbEscuderias = mongoDB.GetDatabase("Escuderias");
-            var escuderias = dbEscuderias.GetCollection<Escuderia>("Escuderias");
-            escuderias.InsertOne(escuderia);
+            var escuderias = dbEscuderias.GetCollection<BsonDocument>("Escuderias");
+
+            // Le pedí ayuda a Franco porque no me salía nada
+            var escuderiaJSON = @"{
+                ""id"" : """ + escuderia.Id() + @""",
+                ""nombre"" : """ + escuderia.Nombre() + @""",
+                ""nacionalidad"" : """ + escuderia.Nacionalidad() + @""",
+                ""anioFundacion"" : """ + escuderia.AnioFundacion() + @""",
+                ""motores"" : """ + escuderia.Motores() + @""",
+             }";
+            var documento = BsonDocument.Parse(escuderiaJSON);
+            escuderias.InsertOne(documento);
         }
 
         public List<Escuderia> obtenerTodos()
@@ -33,11 +42,19 @@ namespace _3_Infraestructura
 
             MongoClient mongoDB = new MongoClient(this.string_conexion);
             var dbEscuderias = mongoDB.GetDatabase("Escuderias");
-            var escuderias = dbEscuderias.GetCollection<BsonDocument>("Escuderias");
-            var documentos = escuderias.Find(t => true).ToList();
+            var coleccionEscuderias = dbEscuderias.GetCollection<BsonDocument>("Escuderias");
+            var documentos = coleccionEscuderias.Find(t => true).ToList();
             foreach (BsonDocument escuderia in documentos)
             {
-                Console.WriteLine(escuderia);
+                Guid id = Guid.Parse(escuderia["id"].AsString);
+                Escuderia e = new Escuderia(
+                    id,
+                    escuderia["nombre"].AsString,
+                    escuderia["nacionalidad"].AsString,
+                    int.Parse(escuderia["anioFundacion"].AsString),
+                    escuderia["motores"].AsString
+                );
+                listado_escuderias.Add(e);
             }
             return listado_escuderias;
         }
