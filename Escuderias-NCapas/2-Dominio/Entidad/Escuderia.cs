@@ -56,18 +56,9 @@ namespace _2_Dominio
             return motores.Valor();
         }
 
-
-
-
-
-
         public String obtenerDatos()
         {
             return "La escudería " + this.nombre.Valor() + ", de nacionalidad " + this.nacionalidad.Valor() + " fué fundada en " + this.anioFundacion.Valor() + ", utiliza motores " + this.motores.Valor();
         }
-
-
-
-
     }
 }
