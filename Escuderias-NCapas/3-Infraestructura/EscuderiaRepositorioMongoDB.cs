@@ -2,12 +2,30 @@
 using _2_Dominio.Repositorio;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using _2_Dominio.ValueObjects;
+using static MongoDB.Driver.WriteConcern;
 
 namespace _3_Infraestructura
 {
     public class EscuderiaRepositorioMongoDB : IEscuderiaRepositorio
     {
         string string_conexion = "mongodb://mongo:2c40cwoJAUuonQFJRIMo@containers-us-west-88.railway.app:6293";
+
+        public void actualizarEscuderia(Escuderia escuderia)
+        {
+            MongoClient mongoDB = new MongoClient(this.string_conexion);
+            var dbEscuderias = mongoDB.GetDatabase("Escuderias");
+            var coleccionEscuderias = dbEscuderias.GetCollection<BsonDocument>("Escuderias");
+
+            var escuderiaAActualizar = Builders<BsonDocument>.Filter.Eq("id", escuderia.Id().ToString());
+            var escuderiaActualizada = Builders<BsonDocument>.Update.Set("nombre", escuderia.Nombre())
+                .Set("nacionalidad", escuderia.Nacionalidad())
+                .Set("anioFundacion", escuderia.AnioFundacion().ToString())
+                .Set("motores", escuderia.Motores());
+
+            coleccionEscuderias.UpdateOne(escuderiaAActualizar, escuderiaActualizada);
+        }
+
         public void borrarEscuderia(Escuderia escuderia)
         {
             MongoClient mongoDB = new MongoClient(this.string_conexion);
@@ -16,6 +34,7 @@ namespace _3_Infraestructura
 
             var deleteFilter = Builders<BsonDocument>.Filter.Eq("id", escuderia.Id().ToString());
             coleccionEscuderias.DeleteOne(deleteFilter);
+
         }
 
         public void grabar(Escuderia escuderia)

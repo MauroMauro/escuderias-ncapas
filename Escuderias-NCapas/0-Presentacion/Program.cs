@@ -6,9 +6,6 @@ using _2_Dominio;
 using _3_Infraestructura;
 
 
-
-
-
 EscuderiaDTO ferrari = new EscuderiaDTO(
     Guid.NewGuid(),
     "Ferrari",
@@ -33,9 +30,9 @@ EscuderiaDTO redBull = new EscuderiaDTO(
     "Honda"
 );
 
-// EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
-// EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
-EscuderiaRepositorioMongoDB escuderiaRepositorio = new EscuderiaRepositorioMongoDB();
+EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
+//EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
+//EscuderiaRepositorioMongoDB escuderiaRepositorio = new EscuderiaRepositorioMongoDB();
 
 CrearEscuderias creadorDeEscuderias = new CrearEscuderias(escuderiaRepositorio);
 
@@ -49,8 +46,8 @@ ObtenerEscuderias obtenedorDeEscuderias = new ObtenerEscuderias(
     escuderiaRepositorio
 );
 
-List<EscuderiaDTO> todosLasEscuderias = obtenedorDeEscuderias.ejecutar();
-foreach (EscuderiaDTO escuderia in todosLasEscuderias)
+List<EscuderiaDTO> todasLasEscuderias = obtenedorDeEscuderias.ejecutar();
+foreach (EscuderiaDTO escuderia in todasLasEscuderias)
 {
     Console.WriteLine(escuderia.obtenerDatos());
 }
@@ -60,8 +57,33 @@ Console.WriteLine("\nBorrar Escuderia: " + redBull.obtenerDatos());
 BorrarEscuderia borrar = new BorrarEscuderia(escuderiaRepositorio);
 borrar.ejecutar(redBull);
 
-todosLasEscuderias = obtenedorDeEscuderias.ejecutar();
-foreach (EscuderiaDTO escuderia in todosLasEscuderias)
+todasLasEscuderias = obtenedorDeEscuderias.ejecutar();
+foreach (EscuderiaDTO escuderia in todasLasEscuderias)
 {
     Console.WriteLine(escuderia.obtenerDatos());
 }
+
+ActualizarEscuderia actualizadorDeEscuderias = new ActualizarEscuderia(escuderiaRepositorio);
+
+
+var escuderiaAActualizar = todasLasEscuderias.First();
+
+EscuderiaDTO escuderiaActualizada = new EscuderiaDTO(
+   escuderiaAActualizar.Id(),
+   escuderiaAActualizar.Nombre(),
+   escuderiaAActualizar.Nacionalidad(),
+   1950,
+   "Chevrolet"
+);
+
+actualizadorDeEscuderias.ejecutar(escuderiaActualizada);
+
+Console.WriteLine("Datos despues de la actualizacón");
+
+
+todasLasEscuderias = obtenedorDeEscuderias.ejecutar();
+foreach (EscuderiaDTO escuderia in todasLasEscuderias)
+{
+    Console.WriteLine(escuderia.obtenerDatos());
+}
+

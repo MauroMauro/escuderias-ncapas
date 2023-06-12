@@ -22,5 +22,13 @@ namespace _3_Infraestructura
         {
             this.escuderias.Remove(escuderia);
         }
+
+        public void actualizarEscuderia(Escuderia escuderia)
+        {
+            var escuderiaActual=escuderias.Find(e => e.Id()== escuderia.Id());
+            var index= escuderias.IndexOf(escuderiaActual);
+            escuderias[index] = escuderia;
+
+        }
     }
 }
