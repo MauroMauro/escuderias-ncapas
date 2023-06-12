@@ -77,5 +77,9 @@ namespace _3_Infraestructura
             }
             return listado_escuderias;
         }
+        public string nombreEscuderia()
+        {
+            return "Repositorio en MongoDB";
+        }
     }
 }

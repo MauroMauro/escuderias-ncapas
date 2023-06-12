@@ -34,10 +34,10 @@ namespace _3_Infraestructura
 
         public void borrarEscuderia(Escuderia escuderia)
         {
-            using(SqlConnection conexion = new SqlConnection(connectionString))
+            using (SqlConnection conexion = new SqlConnection(connectionString))
             {
                 conexion.Open();
-                using(SqlCommand comando = new SqlCommand("DELETE FROM Escuderias WHERE id=@id", conexion))
+                using (SqlCommand comando = new SqlCommand("DELETE FROM Escuderias WHERE id=@id", conexion))
                 {
                     comando.Parameters.Add("@id", System.Data.SqlDbType.UniqueIdentifier).Value = escuderia.Id();
                     comando.ExecuteNonQuery();
@@ -91,9 +91,10 @@ namespace _3_Infraestructura
 
             return escuderias;
         }
+        public string nombreEscuderia()
+        {
+            return "Repositorio en SQL Server";
 
-
-
-
+        }
     }
 }

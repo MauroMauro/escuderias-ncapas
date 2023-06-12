@@ -25,10 +25,15 @@ namespace _3_Infraestructura
 
         public void actualizarEscuderia(Escuderia escuderia)
         {
-            var escuderiaActual=escuderias.Find(e => e.Id()== escuderia.Id());
-            var index= escuderias.IndexOf(escuderiaActual);
+            var escuderiaActual = escuderias.Find(e => e.Id() == escuderia.Id());
+            var index = escuderias.IndexOf(escuderiaActual);
             escuderias[index] = escuderia;
 
+        }
+
+        public string nombreEscuderia()
+        {
+            return "Repositorio en Memoria";
         }
     }
 }
