@@ -8,6 +8,26 @@ namespace _3_Infraestructura
     public class EscuderiaRepositorioMongoDB : IEscuderiaRepositorio
     {
         string string_conexion = "mongodb://mongo:2c40cwoJAUuonQFJRIMo@containers-us-west-88.railway.app:6293";
+
+        public void actualizarEscuderia(Escuderia escuderia)
+        {
+            MongoClient mongoDB = new MongoClient(this.string_conexion);
+            var dbEscuderias = mongoDB.GetDatabase("Escuderias");
+            var coleccionEscuderias = dbEscuderias.GetCollection<BsonDocument>("Escuderias");
+
+            var updateFilter = Builders<BsonDocument>.Filter.Eq("id", escuderia.Id().ToString());
+            var escuderiaJSON = @"{
+                ""id"" : """ + escuderia.Id() + @""",
+                ""nombre"" : """ + escuderia.Nombre() + @""",
+                ""nacionalidad"" : """ + escuderia.Nacionalidad() + @""",
+                ""anioFundacion"" : """ + escuderia.AnioFundacion() + @""",
+                ""motores"" : """ + escuderia.Motores() + @""",
+             }";
+            var documento = BsonDocument.Parse(escuderiaJSON);
+
+            coleccionEscuderias.UpdateOne(updateFilter, documento);
+        }
+
         public void borrarEscuderia(Escuderia escuderia)
         {
             MongoClient mongoDB = new MongoClient(this.string_conexion);
