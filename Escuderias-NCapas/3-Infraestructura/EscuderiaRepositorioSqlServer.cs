@@ -15,6 +15,23 @@ namespace _3_Infraestructura
 
         String connectionString = "Data Source=NICO;Initial Catalog=EscuderíasTP;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
+        public void actualizarEscuderia(Escuderia escuderia)
+        {
+            using (SqlConnection conexion = new SqlConnection(connectionString))
+            {
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand("UPDATE Escuderias SET nombre= @nombre, nacionalidad= @nacionalidad, anio_fundacion= @anio_fundacion, motores= @motores WHERE id=@id", conexion))
+                {
+                    comando.Parameters.Add("@id", System.Data.SqlDbType.UniqueIdentifier).Value = escuderia.Id();
+                    comando.Parameters.Add("@nombre", System.Data.SqlDbType.VarChar).Value = escuderia.Nombre();
+                    comando.Parameters.Add("@nacionalidad", System.Data.SqlDbType.VarChar).Value = escuderia.Nacionalidad();
+                    comando.Parameters.Add("@anio_fundacion", System.Data.SqlDbType.Int).Value = escuderia.AnioFundacion();
+                    comando.Parameters.Add("@motores", System.Data.SqlDbType.VarChar).Value = escuderia.Motores();
+                    comando.ExecuteNonQuery();
+                }
+            }
+        }
+
         public void borrarEscuderia(Escuderia escuderia)
         {
             using(SqlConnection conexion = new SqlConnection(connectionString))
@@ -74,6 +91,8 @@ namespace _3_Infraestructura
 
             return escuderias;
         }
+
+
 
 
     }
