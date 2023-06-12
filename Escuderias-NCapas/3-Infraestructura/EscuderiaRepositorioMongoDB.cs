@@ -2,6 +2,8 @@
 using _2_Dominio.Repositorio;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using _2_Dominio.ValueObjects;
+using static MongoDB.Driver.WriteConcern;
 
 namespace _3_Infraestructura
 {
@@ -15,17 +17,13 @@ namespace _3_Infraestructura
             var dbEscuderias = mongoDB.GetDatabase("Escuderias");
             var coleccionEscuderias = dbEscuderias.GetCollection<BsonDocument>("Escuderias");
 
-            var updateFilter = Builders<BsonDocument>.Filter.Eq("id", escuderia.Id().ToString());
-            var escuderiaJSON = @"{
-                ""id"" : """ + escuderia.Id() + @""",
-                ""nombre"" : """ + escuderia.Nombre() + @""",
-                ""nacionalidad"" : """ + escuderia.Nacionalidad() + @""",
-                ""anioFundacion"" : """ + escuderia.AnioFundacion() + @""",
-                ""motores"" : """ + escuderia.Motores() + @""",
-             }";
-            var documento = BsonDocument.Parse(escuderiaJSON);
+            var escuderiaAActualizar = Builders<BsonDocument>.Filter.Eq("id", escuderia.Id().ToString());
+            var escuderiaActualizada = Builders<BsonDocument>.Update.Set("nombre", escuderia.Nombre())
+                .Set("nacionalidad", escuderia.Nacionalidad())
+                .Set("anioFundacion", escuderia.AnioFundacion().ToString())
+                .Set("motores", escuderia.Motores());
 
-            coleccionEscuderias.UpdateOne(updateFilter, documento);
+            coleccionEscuderias.UpdateOne(escuderiaAActualizar, escuderiaActualizada);
         }
 
         public void borrarEscuderia(Escuderia escuderia)
@@ -36,6 +34,7 @@ namespace _3_Infraestructura
 
             var deleteFilter = Builders<BsonDocument>.Filter.Eq("id", escuderia.Id().ToString());
             coleccionEscuderias.DeleteOne(deleteFilter);
+
         }
 
         public void grabar(Escuderia escuderia)

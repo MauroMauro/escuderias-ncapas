@@ -30,8 +30,8 @@ EscuderiaDTO redBull = new EscuderiaDTO(
     "Honda"
 );
 
-// EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
-// EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
+//EscuderiaRepositorioEnMemoria escuderiaRepositorio = new EscuderiaRepositorioEnMemoria();
+//EscuderiaRepositorioSqlServer escuderiaRepositorio = new EscuderiaRepositorioSqlServer();
 EscuderiaRepositorioMongoDB escuderiaRepositorio = new EscuderiaRepositorioMongoDB();
 
 CrearEscuderias creadorDeEscuderias = new CrearEscuderias(escuderiaRepositorio);
@@ -72,11 +72,14 @@ EscuderiaDTO escuderiaActualizada = new EscuderiaDTO(
    escuderiaAActualizar.Id(),
    escuderiaAActualizar.Nombre(),
    escuderiaAActualizar.Nacionalidad(),
-    1929,
-   escuderiaAActualizar.Motores()
+   1950,
+   "Chevrolet"
 );
 
 actualizadorDeEscuderias.ejecutar(escuderiaActualizada);
+
+Console.WriteLine("datos despues de la actualizacón");
+
 
 todasLasEscuderias = obtenedorDeEscuderias.ejecutar();
 foreach (EscuderiaDTO escuderia in todasLasEscuderias)
