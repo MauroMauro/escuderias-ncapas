@@ -6,9 +6,6 @@ using _2_Dominio;
 using _3_Infraestructura;
 
 
-
-
-
 EscuderiaDTO ferrari = new EscuderiaDTO(
     Guid.NewGuid(),
     "Ferrari",
@@ -49,8 +46,8 @@ ObtenerEscuderias obtenedorDeEscuderias = new ObtenerEscuderias(
     escuderiaRepositorio
 );
 
-List<EscuderiaDTO> todosLasEscuderias = obtenedorDeEscuderias.ejecutar();
-foreach (EscuderiaDTO escuderia in todosLasEscuderias)
+List<EscuderiaDTO> todasLasEscuderias = obtenedorDeEscuderias.ejecutar();
+foreach (EscuderiaDTO escuderia in todasLasEscuderias)
 {
     Console.WriteLine(escuderia.obtenerDatos());
 }
@@ -60,8 +57,30 @@ Console.WriteLine("\nBorrar Escuderia: " + redBull.obtenerDatos());
 BorrarEscuderia borrar = new BorrarEscuderia(escuderiaRepositorio);
 borrar.ejecutar(redBull);
 
-todosLasEscuderias = obtenedorDeEscuderias.ejecutar();
-foreach (EscuderiaDTO escuderia in todosLasEscuderias)
+todasLasEscuderias = obtenedorDeEscuderias.ejecutar();
+foreach (EscuderiaDTO escuderia in todasLasEscuderias)
 {
     Console.WriteLine(escuderia.obtenerDatos());
 }
+
+ActualizarEscuderia actualizadorDeEscuderias = new ActualizarEscuderia(escuderiaRepositorio);
+
+
+var escuderiaAActualizar = todasLasEscuderias.First();
+
+EscuderiaDTO escuderiaActualizada = new EscuderiaDTO(
+   escuderiaAActualizar.Id(),
+   escuderiaAActualizar.Nombre(),
+   escuderiaAActualizar.Nacionalidad(),
+    1929,
+   escuderiaAActualizar.Motores()
+);
+
+actualizadorDeEscuderias.ejecutar(escuderiaActualizada);
+
+todasLasEscuderias = obtenedorDeEscuderias.ejecutar();
+foreach (EscuderiaDTO escuderia in todasLasEscuderias)
+{
+    Console.WriteLine(escuderia.obtenerDatos());
+}
+
