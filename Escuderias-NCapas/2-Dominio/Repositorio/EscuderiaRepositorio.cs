@@ -14,5 +14,7 @@ namespace _2_Dominio.Repositorio
 
         public void borrarEscuderia(Escuderia escuderia);
         public void actualizarEscuderia(Escuderia escuderia);
+
+        public string nombreEscuderia();
     }
 }
