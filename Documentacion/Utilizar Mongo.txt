@@ -1,0 +1,3 @@
+Tal vez haya que instalar el paquete Mongo.Driver.
+Para realizar una conexión a una base de datos mongo, hay que cambiar la variable "string_conexion" dentro del archivo EscuderiaRepositorioMongoDB por el string de conexión correposdiente.
+La base de datos debe llamarse Escuderias y debe contener una Colección llamada Escuderias.
