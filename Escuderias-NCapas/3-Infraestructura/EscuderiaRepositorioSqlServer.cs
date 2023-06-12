@@ -20,7 +20,7 @@ namespace _3_Infraestructura
             using (SqlConnection conexion = new SqlConnection(connectionString))
             {
                 conexion.Open();
-                using (SqlCommand comando = new SqlCommand("UPDATE Escuderias SET nombre= @nombre, nacionalidad= @nacionalidad, anio_fundacion= @anio_fundacion, motores= @motores WHERE id=@id", conexion))
+                using (SqlCommand comando = new SqlCommand("UPDATE Escuderias SET nombre=@nombre, nacionalidad=@nacionalidad, anio_fundacion=@anio_fundacion, motores=@motores WHERE id=@id", conexion))
                 {
                     comando.Parameters.Add("@id", System.Data.SqlDbType.UniqueIdentifier).Value = escuderia.Id();
                     comando.Parameters.Add("@nombre", System.Data.SqlDbType.VarChar).Value = escuderia.Nombre();
