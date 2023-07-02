@@ -1,4 +1,19 @@
 COMO usuario de la aplicación
-QUIERO poder cargar un registro de escudería
-PARA que se muestren sus datos por pantalla
+QUIERO poder cargar un registro de Escudería
+PARA que sus datos sean guardados
 
+COMO usuario de la aplicación 
+QUIERO elegir entre diferentes opciones de persistencia
+PARA definir donde se guardarán los datos según mi conveniencia
+
+COMO usuario de la aplicación 
+QUIERO poder acceder a los datos guardados
+PARA consultar la información existente
+
+COMO usuario de la aplicación
+QUIERO poder editar registros
+PARA actualizar información
+
+COMO usuario de la aplicación 
+QUIERO poder borrar registros
+PARA eliminar información
