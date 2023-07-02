@@ -30,5 +30,26 @@ namespace _2_DominioTest
             //Assert
             Assert.Equal(redBull.obtenerDatos(), infoEsperada);
         }
+
+
+        [Fact]
+        public void Escuderia_SeIngresanDatosInvalidos_NoRetornaDatos()
+        {
+            //Arrange
+            
+            //Act
+
+            //Assert
+            Assert.Throws<System.Exception>(() => new Escuderia(
+            Guid.NewGuid(),
+            "Red Bull",
+            "Austríaca",
+            2025,
+            "Honda"
+            ));
+
+        }
+
+
     }
 }
